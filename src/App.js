@@ -6,6 +6,10 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      value: 'Hello Ivan'
+    };
   }
 
   render() {
@@ -17,6 +21,8 @@ class App extends Component {
             Edit <code>src/App.js</code> and save to reload.
           </p>
 
+          <p>{this.state.value}</p>
+          <button onClick={() => this.setState({value: 'Hello Ivan Londono'})}>Refresh</button>
           <a
             className="App-link"
             href="https://reactjs.org"
