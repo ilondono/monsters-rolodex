@@ -8,30 +8,29 @@ class App extends Component {
     super(props);
 
     this.state = {
-      value: 'Hello Ivan'
+      monsters: [
+        {
+          name: 'Frankenstein'
+        }, 
+        {
+          name: 'Dracula'
+        },
+        {
+          name: 'Zombie'
+        },
+        {
+          name: 'AUV 6.402'
+        }
+      ]
     };
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-
-          <p>{this.state.value}</p>
-          <button onClick={() => this.setState({value: 'Hello Ivan Londono'})}>Refresh</button>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {
+          this.state.monsters.map((monster) => <h2>{monster.name}</h2>)
+        }
       </div>
     );
   }
