@@ -8960,10 +8960,10 @@
     "nanoid" "^3.1.20"
     "source-map" "^0.6.1"
 
-"postcss@7.0.21":
+"postcss@8.2.10":
   "integrity" "sha512-uIFtJElxJo29QC753JzhidoAhvp/e/Exezkdhfmt8AymWT6/5B7W1WmponYWkHk2eg6sONyTch0A3nkMPun3SQ=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.21.tgz"
-  "version" "7.0.21"
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.10.tgz"
+  "version" "8.2.10"
   dependencies:
     "chalk" "^2.4.2"
     "source-map" "^0.6.1"
